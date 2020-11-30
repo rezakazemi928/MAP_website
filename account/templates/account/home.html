@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Staging Template">
+    <meta name="keywords" content="Staging, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Staging | Template</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="{% static '/css/bootstrap.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static '/css/font-awesome.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static '/css/elegant-icons.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static '/css/owl.carousel.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static '/css/slicknav.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static '/css/slick.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static '/css/style.css' %}" type="text/css">
+</head>
+
+<body>
+<!-- Page Preloder -->
+<div id="preloder">
+    <div class="loader"></div>
+</div>
+
+<!-- Offcanvas Menu Begin -->
+<div class="offcanvas-menu-overlay"></div>
+<div class="offcanvas-menu-wrapper">
+    <div class="offcanvas__logo">
+        <a href="#"><img src="img/logo.png" alt=""></a>
+    </div>
+    <div id="mobile-menu-wrap"></div>
+    <div class="offcanvas__widget">
+        <span>Call us for any questions</span>
+        <h4>+01 123 456 789</h4>
+    </div>
+</div>
+<!-- Offcanvas Menu End -->
+
+<!-- Header Section Begin -->
+<header class="header">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="header__logo">
+                    <a href="#"><img src="img/logo.png" alt=""></a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <nav class="header__menu mobile-menu">
+                    <ul>
+                        <li class="active"><a href="./index.html">Home</a></li>
+                        <li><a href="{% url 'sign_up' %}">Sign Up</a></li>
+                        <li><a href="{% url 'login' %}">Log In</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-lg-3">
+                <div class="header__widget">
+                    <span>Call us for any questions</span>
+                    <h4>+01 123 456 789</h4>
+                </div>
+            </div>
+        </div>
+        <div class="canvas__open"><i class="fa fa-bars"></i></div>
+    </div>
+</header>
+<!-- Header Section End -->
+
+<!-- Hero Section Begin -->
+<section class="hero">
+    <div class="hero__slider owl-carousel">
+        <div class="hero__items set-bg" data-setbg="{% static '/img/image.jpg' %}">
+            <div class="hero__text">
+                <h2 class="text">MAP WEBSITE</h2>
+                <a href="{% url 'login' %}" class="primary-btn ">Log in</a>
+                <a href="#" class="more_btn">Discover more</a>
+                <div class="hero__social">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="hero__items set-bg" data-setbg="{% static '/img/image2.jpg' %}">
+            <div class="hero__text">
+                <h2 class="text">Improve your speaking skills</h2>
+                <a href="{% url 'sign_up' %}" class="primary-btn ">Sign up</a>
+                <a href="#" class="more_btn">Discover more</a>
+                <div class="hero__social">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slide-num" id="snh-1"></div>
+    <div class="slider__progress"><span></span></div>
+</section>
+<!-- Hero Section End -->
+
+<!-- About Section Begin -->
+<section class="about spad">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="about__text">
+                    <div class="section-title">
+                        <span>who are we</span>
+                        <h2>We are students as you are.</h2>
+                    </div>
+                    <div class="about__para__text">
+                        <p>Hello there, thank you so much for your time to visit our web page we would be honored to
+                            have you in our community. </p>
+                        <p>All we want to do is helping you to improve your speaking skills and vocabulary. choose a
+                            topic and present it for others record your voice and
+                            share your file with us. Take it easy and and start your journey.</p>
+                    </div>
+                    <a href="#" class="primary-btn normal-btn">Learn More</a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="">
+                    <div class="">
+                        <img src="{% static '/img/about-pic.jpg' %}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Section Begin -->
+<section class="services spad">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title">
+                    <span>Our specialization</span>
+                    <h2>What you do in our website</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-12 col-sm-12">
+                <div class="services__item">
+                    <img src="img/services/services-1.png" alt="">
+                    <h4>Upload your own voice file</h4>
+                    <p>You can uoload your voice file in your profile. That would be great if you do that with the
+                        details.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12">
+                <div class="services__item">
+                    <img src="img/services/services-2.png" alt="">
+                    <h4>Get feedback</h4>
+                    <p>The other students will send their opinion. And you can us their feedback to improve your
+                        skill.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12">
+                <div class="services__item">
+                    <img src="img/services/services-3.png" alt="">
+                    <h4>Listen to the others.</h4>
+                    <p>You can listen to other Podcast and get lots of information out of it. so you would have this
+                        opportunity to improve your listening skills
+                        as well. Do not forget to leave a comment for your friends.</p>
+                </div>
+            </div>
+        </div>
+        <div class="counter__content">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="counter__item">
+                        <div class="counter__item__number">
+                            <h2 class="count">85</h2>
+                        </div>
+                        <div class="counter__item__text">
+                            <h5>Projects<br/> Completed</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="counter__item">
+                        <div class="counter__item__number">
+                            <h2 class="count">127</h2>
+                        </div>
+                        <div class="counter__item__text">
+                            <h5>Happy<br/> Clients</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="counter__item">
+                        <div class="counter__item__number">
+                            <h2 class="count">36</h2>
+                        </div>
+                        <div class="counter__item__text">
+                            <h5>Awards<br/> Received</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="counter__item">
+                        <div class="counter__item__number">
+                            <h2 class="count">74</h2>
+                        </div>
+                        <div class="counter__item__text">
+                            <h5>Cups Of<br/> Coffee</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Services Section End -->
+
+<!-- Js Plugins -->
+<script src="{% static '/js/jquery-3.3.1.min.js' %}"></script>
+<script src="{% static '/js/bootstrap.min.js' %}"></script>
+<script src="{% static '/js/jquery.slicknav.js' %}"></script>
+<script src="{% static '/js/owl.carousel.min.js' %}"></script>
+<script src="{% static '/js/owl.carousel.min.js' %}"></script>
+<script src="{% static '/js/main.js' %}"></script>
+</body>
+
+</html>
