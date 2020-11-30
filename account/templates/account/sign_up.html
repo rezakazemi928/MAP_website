@@ -25,11 +25,13 @@
                     <h2 class="form-title">Sign up</h2>
 
 
-                    {% for message in messages %}
+                    {% if form.errors %}
+
                     <div class="alert alert-danger" role="alert">
-                        <p id="messages">{{message}}</p>
+                        <p>{{form.errors}}</p>
                     </div>
-                    {% endfor %}
+                    {% endif %}
+
                     <form method="POST" class="register-form" id="register-form">
                         {% csrf_token %}
 

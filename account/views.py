@@ -45,9 +45,18 @@ def signup_page(request):
     register_form_obj.fields['password2'].widget.attrs.update({
         'placeholder' : 'Re enter your password'
     })
+
+    if request.method == 'POST':
+        register_form_obj = RegisterForm(request.POST)
+        if register_form_obj.is_valid():
+            register_form_obj.save()
+            messages.success(request , "You account has been created successfully.")
+            return redirect('login')
+
     context = {
         'form': register_form_obj,
     }
+
     return render(request, 'account/sign_up.html', context)
 
 
